@@ -163,13 +163,13 @@ namespace CanvasApp {
           Console.WriteLine(String.Format("d: {0}", d));
           this.Plot(x, y, color);
           // Console.WriteLine(String.Format("d: {0}", d));
-          if (d > 0) {
+          if (d < 0) {
             y--;
-            d += B + B;
+            d -= B + B;
             // Console.WriteLine(String.Format("d: {0}", d));
           }
           x++;
-          d -= (A + A);
+          d += (A + A);
           // Console.WriteLine(String.Format("d: {0}", d, y));
           // Console.WriteLine("\n\n");
         }

@@ -8,17 +8,16 @@ namespace LineMakerApp {
 
     static void Main() {
       Canvas c = new Canvas(500, 500);
-      int x, y;
-
-      for (x = 0; x < 500; x += 4) {
-        c.DrawLine(0, 0, x, 499, new int[3] {x / 4, 0, 0});
-      }
-      for (y = 499; y >= 0; y -= 4) {
-        c.DrawLine(0, 0, 499, y, new int[3] {(1000 - y) / 4, 0, 0});
-      }
+      // int x, y;
+      //
+      // for (x = 0; x < 500; x += 4) {
+      //   c.DrawLine(0, 0, x, 499, new int[3] {x / 4, 0, 0});
+      // }
+      // for (y = 499; y >= 0; y -= 4) {
+      //   c.DrawLine(0, 0, 499, y, new int[3] {(1000 - y) / 4, 0, 0});
+      // }
 
       /********** TEST CASES **********/
-      /*
 
       // black lines for now
       int[] color = {0, 0, 0};
@@ -71,10 +70,10 @@ namespace LineMakerApp {
       // slope undefined, y1 < y0
       c.DrawLine(250, 250, 250, 50, color);
 
-      // c.Plot(250, 251, new int[3] {255, 0, 0});
-      */
+      // c.Plot(249, 251, new int[3] {255, 0, 0});
 
       c.WriteFile("line.ppm");
+      Console.WriteLine("line.ppm");
 
     } // end Main method
   } // end LineMaker class
