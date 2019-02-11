@@ -1,0 +1,5 @@
+## Joan's gitignore for Graphics C# stuff
+
+*.ppm
+*.png
+*.exe
